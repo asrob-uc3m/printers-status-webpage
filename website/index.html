@@ -45,7 +45,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about">Información básica</a>
                     </li>
                     <li>
                         <a href="#blacky">Blacky</a>
@@ -73,37 +73,71 @@
     <!-- Page Content -->
     <div class="container">
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="about">
+        <div class="page-header">
+            <h1>Información básica</h1>
+            <p class="lead">Funcionen o no las impresoras, aquí encontrarás siempre información útil</p>
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-6">
+              <h4>Grupo de Telegram</h4>
+              <p>Para cualquier problema o duda, tenemos un <a href="https://telegram.me/joinchat/ADT1EAoc4Ds9nBXp4Hj9dw">Grupo de Telegram</a> disponible en el que contactar con nosotros. Esto es un texto totalmente de coña para nivelar ambas columnas.</p><br>
+
+              <h4>Manual de usuario</h4>
+              <p>Si no sabes cómo usar las impresoras, disponemos de un <a href="https://www.gitbook.com/book/asrobuc3m/impresoras-user-manual-i3/details">manual de usuario</a> que deberías leer. Si crees que alguna cosa no queda clara o está desfasada, pon una incidencia para que pueda ser actualizado.</p><br>
+
+              <h4>Impresoras 3D de ASROB</h4>
+              <p>Si quieres saber más sobre las impresoras 3D que formaron parte de ASROB y su historia, puedes leer acerca de las impresoras 3D de ASROB <a href="http://asrob.uc3m.es/index.php/Impresoras_pasadas">aquí</a>.</p>
+            </div>
+
+            <div class="col-lg-6">
+              <h4>Incidencias</h4>
+              <p>Si le ocurre algo a alguna impresora mientras estás imprimiendo, debes poner una incidencia <a href="https://github.com/asrob-uc3m/impresoras-asrob/issues">aquí</a>. No olvides describir con el mayor detalle posible qué es lo que le pasa a la impresora y cualquier detalle relevante sobre cómo ha ocurrido el incidente.</p><br>
+
+              <h4>Manual de mantenimiento</h4>
+              <p>Si le ocurre algo a alguna impresora mientras estás imprimiendo, debes poner una incidencia <a href="https://github.com/asrob-uc3m/impresoras-asrob/issues">aquí</a>. No olvides describir con el mayor detalle posible qué es lo que le pasa a la impresora y cualquier detalle relevante sobre cómo ha ocurrido el incidente.</p><br>
+
+
+              <h4>Printer One: A Clone Wars Story</h4>
+              <p>Si te interesa el tema de las impresoras 3D y quieres aprender más, </p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider"  id="blacky">
 
         <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
+        <div class="featurette">
+            <img class="featurette-image img-circle img-responsive pull-left" src="img/blacky.png">
+            <h2 class="featurette-heading">Blacky - 
+                <span class="text-muted">La impresora negra.</span>
+            </h2>
+            <h2>
+                <span class="label label-success">Status: ok</span>
             </h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="hijares">
 
         <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Second Heading
-                <span class="text-muted">Is Pretty Cool Too.</span>
+        <div class="featurette" >
+            <img class="featurette-image img-circle img-responsive pull-right" src="img/hijares.png">
+            <h2 class="featurette-heading">Hija Resurrection -
+                <span class="text-muted">La otra impresora.</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Third Heading
-                <span class="text-muted">Will Seal the Deal.</span>
+            <h2>
+                <span class="label label-danger">Status: no funciona</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Causas:</p>
+            <div class="col-sm-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Issue #1</a>
+                    <a href="#" class="list-group-item">Issue #2Morbi leo risus</a>
+                </div>
+            </div>
+
         </div>
 
         <hr class="featurette-divider">
@@ -112,7 +146,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Based on the <a href="http://startbootstrap.com/template-overviews/one-page-wonder/">One Page Wonder template</a>  &copy; ASROB 2017</p>
                 </div>
             </div>
         </footer>
@@ -128,4 +162,4 @@
 
 </body>
 
-</html>l Knock Your Socks Off
+</html>
