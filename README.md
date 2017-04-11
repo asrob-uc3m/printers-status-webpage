@@ -20,5 +20,5 @@ You will have to schedule the execution of generate.py in order to have an updat
 
 # Attributions
 
-* [Bootstrap](http://startbootstrap.com).
+* [Bootstrap](http://getbootstrap.com/).
 * Based on the Based on the [One Page Wonder template](http://startbootstrap.com/template-overviews/one-page-wonder/).
