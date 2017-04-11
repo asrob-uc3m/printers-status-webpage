@@ -1,8 +1,8 @@
-import begin
 import os
-import requests
 import json
 
+import begin
+import requests
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 @begin.start(auto_convert=True)
