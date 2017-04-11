@@ -104,16 +104,22 @@
             </div>
         </div>
 
-        
-        <hr class="featurette-divider"  id="blacky">
+        {% for printer in printers %}
+        <hr class="featurette-divider"  id="{{printer.id}}">
 
         <!-- First Featurette -->
         <div class="featurette">
-            <img class="featurette-image img-circle img-responsive pull-left" src="img/blacky.png">
-            <h2 class="featurette-heading">Blacky - 
-                <span class="text-muted">La impresora negra.</span>
+            <img class="featurette-image img-circle img-responsive {% if loop.index is divisibleby 2 %}pull-right{% else %}pull-left{% endif %}" src="img/{{printer.id}}.png">
+            <h2 class="featurette-heading">{{printer.name}} - 
+                <span class="text-muted">{{printer.description}}</span>
             </h2>
-            
+            {% if blacky_ok %}
+            <h2>
+                <span class="label label-success">Status: ok</span>
+            </h2>
+            <p class="lead">Esta impresora está disponible para imprimir. Las impresoras 3D son de uso libre y gratuito, aunque para usarlas es necesario ser operador de impresoras 3D. Si todavia no eres operador ponte en contacto con un <a href="http://asrob.uc3m.es/index.php/Operadores">operador</a> para que te de la formación.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://docs.google.com/spreadsheets/d/1fru5fgyNI5WEdrpnc93M_aa2qzlyQ3XvnHmSKsPSFF4/edit#gid=1352902210" role="button">Reserva aquí</a></p>
+            {% else %}
             <h2>
                 <span class="label label-danger">Status: no funciona</span>
             </h2>
@@ -121,44 +127,15 @@
             <p class="lead">Las causas son las siguientes:</p>
             <div class="col-sm-4">
                 <div class="list-group">
-                    
-                    <a href="#" class="list-group-item">reajuste de pid de la cama caliente</a>
-                    
-                    <a href="#" class="list-group-item">Se debe configurar y documentar configuración PC nuevo de Blacky</a>
-                    
+                    {% for issue in printer.issues %}
+                    <a href="#" class="list-group-item">{{ issue }}</a>
+                    {% endfor %}
                 </div>
             </div>
-            
+            {% endif %}
 
         </div>
-        
-        <hr class="featurette-divider"  id="hijares">
-
-        <!-- First Featurette -->
-        <div class="featurette">
-            <img class="featurette-image img-circle img-responsive pull-right" src="img/hijares.png">
-            <h2 class="featurette-heading">Hija Resurrection - 
-                <span class="text-muted">La otra impresora</span>
-            </h2>
-            
-            <h2>
-                <span class="label label-danger">Status: no funciona</span>
-            </h2>
-            <p class="lead">Lamentablemente, esta impresora no está disponible para imprimir.</p>
-            <p class="lead">Las causas son las siguientes:</p>
-            <div class="col-sm-4">
-                <div class="list-group">
-                    
-                    <a href="#" class="list-group-item">reajuste de pid de la cama caliente</a>
-                    
-                    <a href="#" class="list-group-item">Se debe configurar y documentar PC nuevo de Hija Resurrection</a>
-                    
-                </div>
-            </div>
-            
-
-        </div>
-        
+        {% endfor %}
 
 
         <hr class="featurette-divider">
