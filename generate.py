@@ -9,7 +9,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 def start():
 
     # This parts get the data from github
-    url = "https://api.github.com/repos/asrob-uc3m/impresoras-asrob/issues?state=open&labels={}" # NO%20FUNCIONA,
+    url = "https://api.github.com/repos/asrob-uc3m/impresoras-asrob/issues?state=open&labels=NO%20FUNCIONA,{}"
     printers = {'BLACKY': {
                     'name':'Blacky',
                     'id':'blacky',
@@ -29,7 +29,7 @@ def start():
         response = requests.get(url.format(printer_name_for_url))
         obj = json.loads(response.text)
         for issue in obj:
-            printers[printer_name]['issues'].append(issue['title'])
+            printers[printer_name]['issues'].append({'title':issue['title'], 'url':issue['html_url']})
 
     print(printers)
 
