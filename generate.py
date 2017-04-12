@@ -34,7 +34,7 @@ def start(output_file: 'Select website directory to write index.html'= os.path.j
     # print(printers)
 
     # This part generates the webpage
-    env = Environment(loader=FileSystemLoader('./templates'), autoescape=select_autoescape(['html', 'xml']))
+    env = Environment(loader=FileSystemLoader(os.path.join(os.path.split(__file__)[0],'templates')), autoescape=select_autoescape(['html', 'xml']))
     template = env.get_template('index.html')
     html = template.render(printers=sorted(list(printers.values()), key=lambda x: x['index']))
 
