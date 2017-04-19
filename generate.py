@@ -15,14 +15,16 @@ def start(output_file: 'Select website directory to write index.html'= os.path.j
                     'id':'blacky',
                     'index':0,
                     'description':'La impresora negra.',
-                    'issues':[]},
+                    'issues':[],
+                    'link':'https://docs.google.com/a/uc3m.es/spreadsheets/d/1_5CTtLnTtvf1SvUjYg5-yuSyRZSLuNe-gHyNoZCUo3g/edit?usp=sharing'},
 
                 'HIJA RESURRECTION':{
                     'name':'Hija Resurrection',
                     'id':'hijares',
                     'index':1,
                     'description':'La otra impresora',
-                    'issues':[]}}
+                    'issues':[],
+                    'link':'https://docs.google.com/a/uc3m.es/spreadsheets/d/1WCa2KACa7s2D73cb4SjYKu_3sZdxpzF3b5tcT22BO6Y/edit?usp=sharing'}}
 
     for printer_name in printers:
         printer_name_for_url = printer_name.replace(" ", "%20")
