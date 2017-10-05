@@ -108,9 +108,12 @@
         <hr class="featurette-divider"  id="{{printer.id}}">
 
         <!-- First Featurette -->
-        <div class="featurette">
-            <img class="featurette-image img-circle img-responsive {% if loop.index is divisibleby 2 %}pull-right{% else %}pull-left{% endif %}" src="img/{{printer.id}}.png">
-            <h2 class="featurette-heading">{{printer.name}} - 
+        <div class="row featurette">
+            <div class="col">
+                <img class="featurette-image img-circle img-responsive {% if loop.index is divisibleby 2 %}pull-right{% else %}pull-left{% endif %}" src="img/{{printer.id}}.png">
+            </div>
+            <div class="col">
+                <h2 class="featurette-heading">{{printer.name}} -
                 <span class="text-muted">{{printer.description}}</span>
             </h2>
             {% if not printer.issues %}
@@ -148,7 +151,7 @@
                 </div>
             </div>
             {% endif %}
-
+            </div>
         </div>
         {% endfor %}
 
