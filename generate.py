@@ -22,7 +22,15 @@ def start(output_file: 'Select website directory to write index.html'= os.path.j
                     'name':'Hija Resurrection',
                     'id':'hijares',
                     'index':1,
-                    'description':'La otra impresora',
+                    'description':'La otra impresora.',
+                    'issues':[],
+                    'link':'https://docs.google.com/a/uc3m.es/spreadsheets/d/1WCa2KACa7s2D73cb4SjYKu_3sZdxpzF3b5tcT22BO6Y/edit?usp=sharing'},
+
+                'DEDALO':{
+                    'name':'Dédalo',
+                    'id':'dedalo',
+                    'index':2,
+                    'description':'La reliquia.',
                     'issues':[],
                     'link':'https://docs.google.com/a/uc3m.es/spreadsheets/d/1WCa2KACa7s2D73cb4SjYKu_3sZdxpzF3b5tcT22BO6Y/edit?usp=sharing'}}
 
