@@ -32,7 +32,7 @@ def start(output_file: 'Select website directory to write index.html'= os.path.j
                     'index':2,
                     'description':'La reliquia.',
                     'issues':[],
-                    'link':'https://docs.google.com/a/uc3m.es/spreadsheets/d/1WCa2KACa7s2D73cb4SjYKu_3sZdxpzF3b5tcT22BO6Y/edit?usp=sharing'}}
+                    'link':'https://docs.google.com/a/uc3m.es/spreadsheets/d/1fFE-khJqTYQlrFt21nMkbjPI9HMYCZ7zkc3aeEyo-Y8/edit?usp=sharing'}}
 
     for printer_name in printers:
         printer_name_for_url = printer_name.replace(" ", "%20")
