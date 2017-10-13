@@ -47,12 +47,11 @@
                     <li>
                         <a href="#about">Información básica</a>
                     </li>
+                    {% for printer in printers %}
                     <li>
-                        <a href="#blacky">Blacky</a>
+                        <a href="#{{printer.id}}">{{printer.name}}</a>
                     </li>
-                    <li>
-                        <a href="#hijares">Hija Resurrection</a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
