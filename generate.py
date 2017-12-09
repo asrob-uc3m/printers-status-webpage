@@ -1,5 +1,6 @@
 import os
 import json
+from  datetime import datetime
 
 import begin
 import requests
@@ -46,7 +47,8 @@ def start(output_file: 'Select website directory to write index.html'= os.path.j
     # This part generates the webpage
     env = Environment(loader=FileSystemLoader(os.path.join(os.path.split(__file__)[0],'templates')), autoescape=select_autoescape(['html', 'xml']))
     template = env.get_template('index.html')
-    html = template.render(printers=sorted(list(printers.values()), key=lambda x: x['index']))
+    html = template.render(printers=sorted(list(printers.values()), key=lambda x: x['index']),
+                           timestamp=datetime.now().strftime("%d/%m/%Y a las %H:%M"))
 
     # Only thing left is to save the rendered template
     with open(output_file, 'w') as f:
