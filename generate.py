@@ -33,7 +33,15 @@ def start(output_file: 'Select website directory to write index.html'= os.path.j
                     'index':2,
                     'description':'La reliquia.',
                     'issues':[],
-                    'link':'https://docs.google.com/a/uc3m.es/spreadsheets/d/1fFE-khJqTYQlrFt21nMkbjPI9HMYCZ7zkc3aeEyo-Y8/edit?usp=sharing'}}
+                    'link':'https://docs.google.com/a/uc3m.es/spreadsheets/d/1fFE-khJqTYQlrFt21nMkbjPI9HMYCZ7zkc3aeEyo-Y8/edit?usp=sharing'},
+
+                'GEONOSIS':{
+                    'name':'Geonosis',
+                    'id':'geonosis',
+                    'index':3,
+                    'description':'La bestia parda.',
+                    'issues':[],
+                    'link':'https://docs.google.com/spreadsheets/d/1NMr-WsXSH-zsOTTeobfe4ZzZNsXiiZbKBm5_h2xMTkQ/edit?usp=sharing'}}
 
     for printer_name in printers:
         printer_name_for_url = printer_name.replace(" ", "%20")
