@@ -41,7 +41,15 @@ def start(output_file: 'Select website directory to write index.html'= os.path.j
                     'index':3,
                     'description':'La bestia parda.',
                     'issues':[],
-                    'link':'https://docs.google.com/spreadsheets/d/1NMr-WsXSH-zsOTTeobfe4ZzZNsXiiZbKBm5_h2xMTkQ/edit?usp=sharing'}}
+                    'link':'https://docs.google.com/spreadsheets/d/1NMr-WsXSH-zsOTTeobfe4ZzZNsXiiZbKBm5_h2xMTkQ/edit?usp=sharing'},
+
+                'SPICY':{
+                    'name':'Spicy',
+                    'id':'spicy',
+                    'index':4,
+                    'description':'La caldo Aneto.',
+                    'issues':[],
+                    'link':'https://docs.google.com/spreadsheets/d/1E5GftvAfHNPw1HjJTHA_6RIk-mZ6q2qBBBoPjsfp1-U/edit?usp=sharing'}}
 
     for printer_name in printers:
         printer_name_for_url = printer_name.replace(" ", "%20")
